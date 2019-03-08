@@ -35,9 +35,9 @@ public class SlideLayoutManager extends RecyclerView.LayoutManager {
             measureChildWithMargins(view, 0, 0);
             int widthSpace = getWidth() - getDecoratedMeasuredWidth(view);
             int heightSpace = getHeight() - getDecoratedMeasuredHeight(view);
-            layoutDecoratedWithMargins(view, widthSpace / 2, heightSpace / 5,
+            layoutDecoratedWithMargins(view, widthSpace / 2, heightSpace / 2,
                     widthSpace / 2 + getDecoratedMeasuredWidth(view),
-                    heightSpace / 5 + getDecoratedMeasuredHeight(view));
+                    heightSpace / 2 + getDecoratedMeasuredHeight(view));
             // 给每个ItemView设置scale
             view.setScaleX((float) Math.pow(DEFAULT_SCALE, i));
             view.setScaleY((float) Math.pow(DEFAULT_SCALE, i));
